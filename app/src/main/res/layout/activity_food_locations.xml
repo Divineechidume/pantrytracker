@@ -4,6 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pantry_options"
     tools:context=".food_locations">
 
+    <Button
+        android:id="@+id/pantry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="210dp"
+        android:text="PANTRY" />
+
+    <Button
+        android:id="@+id/fridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pantry"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        android:text="FRIDGE" />
+
+    <Button
+        android:id="@+id/analytics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pantry"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="210dp"
+        android:text="ANALYTICS" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fridge"
+        android:layout_alignTop="@+id/analytics"
+        android:text="SETTINGS" />
 </RelativeLayout>
